@@ -6,7 +6,7 @@ services:
     build: 
       context: .
       dockerfile: ./Dockerfile
-    image: tv2norge-docker.jfrog.io/oracle-sqlcl:18.2
+    image: bjarteb/oracle-sqlcl:18.2
     hostname: oracle-sqlcl
     labels:
       NAME: oralce-sqlcl

@@ -1,10 +1,10 @@
 FROM openjdk:8-jre-alpine
-MAINTAINER Bjarte Brandt <bjarte.brandt@tv2.no>
+MAINTAINER Bjarte Brandt <bjarte.brandt@gmail.no>
 
 ENV TZ="GMT" \
   PATH="/usr/local/sqlcl/bin:${PATH}"
 
-COPY ["bin/sqlcl-*.zip", "scripts/*", "/tmp/"]
+COPY ["download/sqlcl-*.zip", "scripts/*", "/tmp/"]
 
 # This is a dummy volume to reference user's custom scripts
 VOLUME ["/sqlcl"]

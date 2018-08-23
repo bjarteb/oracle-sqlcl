@@ -4,7 +4,7 @@ Download the sqlcl binary form otn.oracle.com and place it in the /bin folder.
 
 ├── Dockerfile
 ├── README.md
-├── bin
+├── download
 │   └── sqlcl-18.2.0.zip
 ├── docker-compose.yml
 └── scripts
@@ -16,5 +16,5 @@ Download the sqlcl binary form otn.oracle.com and place it in the /bin folder.
 alias sqlcl="docker run -it --rm \
   --network="host" \
   -v `pwd`:/sqlcl \
-  tv2norge-docker.jfrog.io/oracle-sqlcl:18.2"
+  bjarteb/oracle-sqlcl:18.2"
 ```
