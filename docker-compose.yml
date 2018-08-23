@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  oracle-sqlcl:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    image: tv2norge-docker.jfrog.io/oracle-sqlcl:18.2
+    hostname: oracle-sqlcl
+    labels:
+      NAME: oralce-sqlcl
+    command: "scott/tiger@localhost:1521/XE"
