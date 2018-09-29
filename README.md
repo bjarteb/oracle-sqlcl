@@ -1,6 +1,7 @@
-# Oracle's new CLI tool - sqlcl
+# Oracle's CLI tool - sqlcl
 
-Download the sqlcl binary form otn.oracle.com and place it in the /bin folder.
+Download the sqlcl tool and place it in the ./download folder in this project.
+https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html
 
 ├── Dockerfile
 ├── README.md

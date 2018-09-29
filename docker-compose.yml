@@ -9,5 +9,5 @@ services:
     image: bjarteb/oracle-sqlcl:18.2
     hostname: oracle-sqlcl
     labels:
-      NAME: oralce-sqlcl
+      NAME: oracle-sqlcl
     command: "scott/tiger@localhost:1521/XE"
